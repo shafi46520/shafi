@@ -1,0 +1,69 @@
+.row {
+    margin-bottom: 25px;
+}
+.friend-thumb {
+    position: relative;
+    z-index: 1;
+	transition:.5s;
+}
+
+.friend-thumb a img {
+    width: 100%;
+    height:  100%;
+}
+.friend-thumb a:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background: black;
+    z-index: 222;
+    opacity: 0.6;
+    transition: .5s;
+    display: inline-block;
+    overflow: hidden;
+}
+.single-thumb:hover .friend-thumb a:before {
+	height:100%;
+}
+
+.friend-content {
+    position: absolute;
+    top: 297px;
+    right: 18px;
+    display: inline-block;
+    z-index: 1;
+    text-align: center;
+    transition: .5s;
+    opacity: 0;
+}
+.single-thumb:hover .friend-content {
+	opacity:1;
+	top: 197px;
+}
+.friend-content h1 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+.friend-content h2 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+.friend-content p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    letter-spacing: 1px;
+}
